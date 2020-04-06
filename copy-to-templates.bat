@@ -1,1 +1,1 @@
-CALL COPY WordScreenCapture.dotm "%USERPROFILE%\Documents\Custom Office Templates\"
+CALL XCOPY WordScreenCapture.dotm "%USERPROFILE%\Documents\Custom Office Templates\" /Y
