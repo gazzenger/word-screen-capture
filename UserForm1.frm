@@ -37,6 +37,7 @@ Private Sub CommandButton2_Click()
     End If
     Selection.PasteAndFormat (wdPasteDefault)
     Selection.TypeText Text:=vbNewLine
+    If ActiveDocument.Saved = False Then ActiveDocument.Save
     ret = ShowWindow(UserFormHdl, 1)
 End Sub
 

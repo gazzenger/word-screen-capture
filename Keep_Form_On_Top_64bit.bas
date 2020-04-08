@@ -61,6 +61,15 @@ Sub Run()
     'Get Current Word Document
     Set objDoc = Word.ActiveDocument
     
+    'check if the file has been saved anywhere, if not then save as dialog
+    If ActiveDocument.Path = "" Then
+        Dialogs(wdDialogFileSaveAs).Show
+    End If
+    'if document has unsaved changes, then save them
+    If ActiveDocument.Saved = False Then
+        ActiveDocument.Save
+    End If
+    
     'Show Userform
     UserForm1.Show
 End Sub
