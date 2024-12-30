@@ -1,5 +1,5 @@
 # word-screen-capture
-*Created by Gary Namestnik*
+*Created by Gary*
 This is a simple VBA script &amp; userform for allowing people to easily capture screenshots and descriptions and place these directly in MS Word as they're performing something
 
 To utilise this document, simply run the .\copy-to-templates.bat file.
